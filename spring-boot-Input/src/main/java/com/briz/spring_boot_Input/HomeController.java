@@ -22,8 +22,17 @@ public class HomeController {
 	public String welcome(@PathVariable String name, @PathVariable int age) {
 		return "Hellow World" + name + "your age is" + age;
 	}
+<<<<<<< HEAD
 @RequestMapping("/welcome/{name}/{age}/{city}")
 	public String welcome(@PathVariable String name, @PathVariable int age, @PathVariable String city) {
 		return "Hellow World" + name + "your age is" + age + "you are from" + city;
 	}
+=======
+
+@RequestMapping("/hello")
+	public String hello() {
+		return "Hii This is a new endpoint";
+	}
+
+>>>>>>> 6c1e074b9be436b3b0c5a2057143174e29dc9c6a
 }
