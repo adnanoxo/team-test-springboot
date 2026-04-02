@@ -16,7 +16,7 @@ public class HomeController {
 }
 @GetMapping("/{name}")
  	public String welcome(@PathVariable String name) {
- 				return "Hellow World" + name;
+ 				return "Hellow Babu" + name;
  	}
 @RequestMapping("/welcome/{name}/{age}")
 	public String welcome(@PathVariable String name, @PathVariable int age) {
@@ -26,6 +26,10 @@ public class HomeController {
 		public String welcome() {
 		return "Hellowwwww";
 	
+
+@RequestMapping("/hello")
+	public String hello() {
+		return "Hii This is a new endpoint";
 	}
 
 }
