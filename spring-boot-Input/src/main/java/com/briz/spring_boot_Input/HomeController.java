@@ -22,11 +22,10 @@ public class HomeController {
 	public String welcome(@PathVariable String name, @PathVariable int age) {
 		return "Hellow World" + name + "your age is" + age;
 	}
-<<<<<<< HEAD
-@RequestMapping("/welcome/{name}/{age}/{city}")
-	public String welcome(@PathVariable String name, @PathVariable int age, @PathVariable String city) {
-		return "Hellow World" + name + "your age is" + age + "you are from" + city;
-	}
+ @RequestMapping("/hii")
+ public String hii() {
+	 return "Hii This";
+ }
 =======
 
 @RequestMapping("/hello")
