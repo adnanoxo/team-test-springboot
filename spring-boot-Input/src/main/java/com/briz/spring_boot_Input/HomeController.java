@@ -22,6 +22,10 @@ public class HomeController {
 	public String welcome(@PathVariable String name, @PathVariable int age) {
 		return "Hellow World" + name + "your age is" + age;
 	}
+@RequestMapping("/welcome")
+		public String welcome() {
+		return "Hellowwwww";
+	
 
 @RequestMapping("/hello")
 	public String hello() {
